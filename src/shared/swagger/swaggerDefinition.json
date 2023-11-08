@@ -1,0 +1,114 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Autorizador de transacciones",
+    "version": "1.0.0",
+    "description": "Documentación de Autorizador de transacciones"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3001"
+    }
+  ],
+  "paths": {
+    "/createAccount": {
+      "post": {
+        "summary": "Crea una cuenta",
+        "requestBody": {
+          "description": "Datos de la cuenta a crear.",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer"
+                  },
+                  "tarjeta_activa": {
+                    "type": "boolean"
+                  },
+                  "límite_disponible": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Cuenta creada con éxito.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Account"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/authorizeTransaction": {
+      "post": {
+        "summary": "Autoriza una transacción",
+        "requestBody": {
+          "description": "Datos de la transacción a autorizar.",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer"
+                  },
+                  "comerciante": {
+                    "type": "string"
+                  },
+                  "cantidad": {
+                    "type": "integer"
+                  },
+                  "tiempo": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Transacción autorizada con éxito.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Account"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Account": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "tarjeta_activa": {
+            "type": "boolean"
+          },
+          "límite_disponible": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}
