@@ -7,4 +7,7 @@ module.exports = {
   getAccount: (id) => {
     return accounts[id];
   },
+  getAll:() => {
+    return accounts;
+  }
 };

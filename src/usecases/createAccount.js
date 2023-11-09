@@ -13,4 +13,7 @@ module.exports = {
     db.saveAccount(account);
     return account;
   },
+  getAccount : ()=> {
+    return db.getAll()
+  }
 };
