@@ -26,6 +26,7 @@ cuenta específica siguiendo un conjunto de reglas predefinidas.
 ## Aplicacion angular 
 
 http://dwgq7dkng9pk9.cloudfront.net/
+https://dwgq7dkng9pk9.cloudfront.net/transaction
 
 ## Estructura de Directorios
 
@@ -33,7 +34,7 @@ Clean Architecture
 
 ## Ejemplo de bodys para las rutas
 
-http://ec2-54-204-250-91.compute-1.amazonaws.com:3001/createAccount
+## http://ec2-54-204-250-91.compute-1.amazonaws.com:3001/createAccount
 {
     "cuenta": {
         "id": 1,
@@ -41,7 +42,7 @@ http://ec2-54-204-250-91.compute-1.amazonaws.com:3001/createAccount
         "limite_disponible": 100
     }
 }
-http://ec2-54-204-250-91.compute-1.amazonaws.com:3001/authorizeTransaction
+## http://ec2-54-204-250-91.compute-1.amazonaws.com:3001/authorizeTransaction
 {
     "transaccion": {
         "id": 1,
