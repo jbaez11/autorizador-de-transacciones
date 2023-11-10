@@ -29,8 +29,10 @@ cuenta específica siguiendo un conjunto de reglas predefinidas.
 
 ## Aplicacion angular 
 
-http://dwgq7dkng9pk9.cloudfront.net/
-http://dwgq7dkng9pk9.cloudfront.net/transaction
+http://d2a4e8fqza5xcu.cloudfront.net/
+http://d2a4e8fqza5xcu.cloudfront.net/transaction
+<img width="234" alt="image" src="https://github.com/jbaez11/autorizador-de-transacciones/assets/38825544/a7b461d1-9158-4a4f-9cbc-52f41a7e5c58">
+
 
 ## Estructura de Directorios
 
