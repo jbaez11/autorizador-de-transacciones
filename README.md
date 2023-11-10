@@ -11,6 +11,10 @@ cuenta específica siguiendo un conjunto de reglas predefinidas.
 
 1. npm run start
 
+## swagger 
+1. http://ec2-54-204-250-91.compute-1.amazonaws.com:3001/api-docs/
+2. localhost:3001/api-docs/
+
 ## Rutas
 
 1. GET: localhost:3001/getAccounts
