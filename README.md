@@ -30,7 +30,7 @@ cuenta específica siguiendo un conjunto de reglas predefinidas.
 ## Aplicacion angular 
 
 http://dwgq7dkng9pk9.cloudfront.net/
-https://dwgq7dkng9pk9.cloudfront.net/transaction
+http://dwgq7dkng9pk9.cloudfront.net/transaction
 
 ## Estructura de Directorios
 
